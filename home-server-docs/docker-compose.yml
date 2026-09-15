@@ -1,0 +1,45 @@
+# Example docker-compose.yml
+# Replace with your actual services. Keep this file in version control
+# alongside the docs so configs and documentation never drift apart.
+# Never commit real secrets — use a .env file (gitignored) or Docker secrets.
+
+services:
+  pihole:
+    image: pihole/pihole:latest
+    container_name: pihole
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "80:80"        # Admin web UI
+    environment:
+      TZ: 'America/New_York'
+      WEBPASSWORD_FILE: /run/secrets/pihole_password
+    volumes:
+      - ./pihole/etc-pihole:/etc/pihole
+      - ./pihole/etc-dnsmasq.d:/etc/dnsmasq.d
+    secrets:
+      - pihole_password
+    restart: unless-stopped
+
+  plex:
+    image: plexinc/pms-docker:latest
+    container_name: plex
+    ports:
+      - "32400:32400"
+    environment:
+      TZ: 'America/New_York'
+      PLEX_CLAIM_FILE: /run/secrets/plex_claim  # single-use, delete after first run
+    volumes:
+      - ./plex/config:/config
+      - /mnt/media:/media
+    devices:
+      - /dev/dri:/dev/dri   # hardware transcoding passthrough
+    secrets:
+      - plex_claim
+    restart: unless-stopped
+
+secrets:
+  pihole_password:
+    file: ./secrets/pihole_password.txt
+  plex_claim:
+    file: ./secrets/plex_claim.txt
