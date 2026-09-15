@@ -1,10 +1,10 @@
 # Hardware
 
 ## Server
-- **Model / Build:**
+- **Model / Build: OptiPlex 7010 Micro**
 - **CPU:**
-- **RAM:**
-- **Storage:**
+- **RAM: 16 GB DDR4**
+- **Storage: 256 GB SSD**
   - Boot drive:
   - Data drive(s) / array (RAID/ZFS layout if applicable):
 - **Network adapters:**
