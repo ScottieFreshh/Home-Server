@@ -2,11 +2,12 @@
 
 All notable changes to the server setup. Newest entries at the top.
 
-## YYYY-MM-DD
-- Added:
-- Changed:
-- Removed:
-- Notes:
+## 2026-09-22
+- Changed: Assembled rack and installed hardware
+
+## 2026-9-21
+- Notes: Cut wires to length and attached RE45 connectors for patch cables, then the same for main cables with keytones
+- More Notes: Keystones are 10x less frustrating then RE45
 
 ---
 
