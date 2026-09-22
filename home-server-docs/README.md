@@ -28,4 +28,7 @@ Central reference for my self-hosted infrastructure. Update this file every time
 - **Last full review:** YYYY-MM-DD
 
 ## Philosophy / Notes
+- AT&T uses one device for modem and router
+- Still have 6 keystones and roughly 20 RJ45 connectors left
+
 Use this section for anything a future version of you needs to know before touching this server — design decisions, things you tried and abandoned, quirks of your ISP/router, etc.
