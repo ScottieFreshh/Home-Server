@@ -17,11 +17,11 @@ Keep this as a running log of real problems you hit and how you fixed them. Sear
 ## Log
 
 ### Router and Access Point both using DHCP — 2026-09-23
-**Symptom:** Certain devices could only connect to an EXT network
-**Affected service(s):** IoT devices, phone
-**Cause:** Ap was set as an extender that would also configure DHCP, causing duplicate IP addresses
-**Fix:** Set device to access point mode, changed SSID to match router 
-**Prevention (if applicable):**
+- **Symptom:** Certain devices could only connect to an EXT network
+- **Affected service(s):** IoT devices, phone
+- **Cause:** Ap was set as an extender that would also configure DHCP, causing duplicate IP addresses
+- **Fix:** Set device to access point mode, changed SSID to match router 
+- **Prevention (if applicable):**
 ```
 
 ### Example: Pi-hole stopped resolving DNS — 2024-01-15
