@@ -4,11 +4,6 @@
 | Segment | Subnet | Purpose |
 |---|---|---|
 | Main LAN | 192.168.1.0/24 | Trusted devices |
-| Server/Services | 192.168.10.0/24 | Home server + containers |
-| IoT | 192.168.20.0/24 | Smart home devices |
-| Guest | 192.168.30.0/24 | Guest WiFi |
-
-> Replace with your actual VLANs/subnets. If you're not segmenting yet, just document the single subnet you're on.
 
 ## Server Network Details
 - **Static IP:**
