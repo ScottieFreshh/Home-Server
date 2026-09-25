@@ -2,11 +2,14 @@
 
 All notable changes to the server setup. Newest entries at the top.
 
+## 2026-09-24
+- Changed: Reconfigured access point from range extender to access point, changed SSID to match router
+    
 ## 2026-09-22
 - Changed: Assembled rack and installed hardware
 
 ## 2026-9-21
-- Notes: Cut wires to length and attached RE45 connectors for patch cables, then the same for main cables with keytones
+- Notes: Cut wires to length and attached RE45 connectors for patch cables, then the same for main cables with keystones
 - More Notes: Keystones are 10x less frustrating then RE45
 
 ---
