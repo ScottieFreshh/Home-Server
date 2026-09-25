@@ -16,7 +16,7 @@ Keep this as a running log of real problems you hit and how you fixed them. Sear
 
 ## Log
 
-### Router and Access Point both using DHCP — 2026-09-23
+### Router and Access Point both using DHCP — 2026-09-24
 - **Symptom:** Certain devices could only connect to an EXT network
 - **Affected service(s):** IoT devices, phone
 - **Cause:** Ap was set as an extender that would also configure DHCP, causing duplicate IP addresses
