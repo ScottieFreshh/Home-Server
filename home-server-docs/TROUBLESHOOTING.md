@@ -14,7 +14,12 @@ Keep this as a running log of real problems you hit and how you fixed them. Sear
 
 ---
 
-## Log
+### Temporary Failure Resolving deb.debian.org— 2026-09-30
+**Symptom:** Could not download packages
+**Affected service(s):**N/A Fresh install
+**Cause:**No DNS translation
+**Fix:**Added nameserver 8.8.8.8 and 1.1.1.1 to etc/resolv.conf (sudo nano /etc/resolv.conf)
+**Prevention (if applicable):**
 
 ### Router and Access Point both using DHCP — 2026-09-24
 - **Symptom:** Certain devices could only connect to an EXT network
