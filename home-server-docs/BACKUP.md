@@ -17,11 +17,11 @@
 - Manual wiping
 
 ## Restore Procedure
-Step-by-step for restoring from backup — this is the part people forget to document and regret it later.
 
 1. Reinstall Debian
-2. Create Compose File and give U + X permissions
-3. Paste from Notepad and sudo ./(file name)
+2. bash <(curl -fsSL getamp.sh) (installs AMP)
+3. Create Compose File and give U + X permissions
+4. Paste from Notepad and sudo ./(file name)
 
 ## Last Tested Restore
 - **Date:**
