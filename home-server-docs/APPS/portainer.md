@@ -3,7 +3,7 @@
 ## Overview
 
 * **Purpose:** Web UI for managing Docker (and Swarm/Kubernetes) containers, images, volumes, networks, and stacks
-* **Version:** 2.39.x LTS (verify the exact version after install under the footer or Settings)
+* **Version:** 2.39.1 LTS 
 * **Docker image:** `portainer/portainer-ce:lts`
 * **Official docs:** https://docs.portainer.io
 
@@ -27,7 +27,7 @@ docker run -d \
 ## Configuration
 
 * **Config file location:** None. Portainer has no config file, and settings are stored in its database at `/data` inside the container (the `portainer_data` volume).
-* **Key settings:** Set in the UI under Settings (authentication method, app templates, edge compute, SSL certificate). Optional startup flags go after the image name, such as `--http-enabled` or `--admin-password-file`.
+* **Key settings:** Set in the UI under Settings
 * **Environment variables:** None required. The mounted Docker socket is how it talks to the local Docker engine.
 
 ## Access
@@ -38,9 +38,9 @@ docker run -d \
 
 ## Data & Backup
 
-* **Data location:** Docker volume `portainer_data` (typically `/var/lib/docker/volumes/portainer_data/_data` on the host)
-* **Included in backup routine?** Yes / No (fill in)
-* **Backup notes:** Portainer has a built-in backup under Settings → Backup Portainer, which can be scheduled in the Business Edition. For CE, back up the `portainer_data` volume directly, ideally with the container stopped. Stacks and containers you deployed through Portainer live in Docker itself, not in Portainer's backup.
+* **Data location:** Docker volume
+* **Included in backup routine?** Yes Weekly
+* **Backup notes:** Portainer has a built-in backup under Settings → Backup Portainer, Stacks and containers you deployed through Portainer live in Docker itself, not in Portainer's backup.
 
 ## Dependencies
 
@@ -51,8 +51,7 @@ docker run -d \
 ## Networking
 
 * **Exposed ports:** 9443 (and 8000 only if using Edge agents)
-* **Behind reverse proxy?** Yes / No (fill in)
-* **Subdomain/URL routing:** e.g. `portainer.yourdomain.com` → `https://portainer:9443`. The upstream uses HTTPS, so the proxy must allow a self-signed backend or use a trusted cert. WebSocket support is required for the console and logs.
+* **Behind reverse proxy?** No 
 
 ## Troubleshooting
 
@@ -80,5 +79,3 @@ The `portainer_data` volume keeps all your settings. Watch for:
 ## Notes
 
 * Mounting `docker.sock` gives Portainer root-equivalent control of the host, so don't expose it directly to the internet.
-* Use a strong admin password and keep it in your password manager.
-* Consider enabling HTTPS-only access and restricting it to your LAN or VPN.
