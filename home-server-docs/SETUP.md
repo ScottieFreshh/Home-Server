@@ -3,8 +3,8 @@
 The goal of this file: if the server dies tomorrow, you should be able to follow this top to bottom and be back up and running without guessing.
 
 ## 1. OS Install
-- ISO/image used:
-- Install steps or unattended install file location:
+- ISO/image used: Debian Linux
+- Install steps or unattended install file location: Use full partition, enable SSH server
 - Post-install hardening steps (disable root SSH login, change default ports, etc.):
 
 ## 2. Base System Configuration
