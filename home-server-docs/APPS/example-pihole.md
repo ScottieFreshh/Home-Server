@@ -56,7 +56,7 @@ done;
 
 ## Data & Backup
 - **Data location:** `/opt/docker/pihole/etc-pihole`, `/opt/docker/pihole/etc-dnsmasq.d`
-- **Included in backup routine?** Yes, daily
+- **Included in backup routine?** Yes, weekly
 - **Backup notes:** `gravity.db` and `custom.list` are the critical files if restoring manually
 
 ## Dependencies
