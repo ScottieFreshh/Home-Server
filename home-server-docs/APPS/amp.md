@@ -29,7 +29,7 @@ bash <(curl -fsSL getamp.sh)
 
 ## Access
 
-* **URL:** `http://<server-ip>:8080` (ADS01, the management instance). Each game server instance also has its own web port.
+* **URL:** `http://192.168.1.194:8080` (ADS01, the management instance). Each game server instance also has its own web port.
 * **Default username:** `admin` (you set the password in the first-run wizard). Never store passwords here; use a password manager.
 * **SSL/TLS:** No by default. HTTPS is optional but strongly recommended, and is mandatory with AMP Enterprise. Options:
   * Let AMP set up nginx and certbot with `ampinstmgr setupnginx my.domain.com 8080`
