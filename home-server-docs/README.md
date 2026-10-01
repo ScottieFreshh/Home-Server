@@ -15,20 +15,20 @@ Central reference for my self-hosted infrastructure. Update this file every time
 
 | App | Purpose | URL | Doc |
 |---|---|---|---|
-| Example: Pi-hole | DNS / ad blocking | http://server-ip:80 | [pihole.md](APPS/example-pihole.md) |
-| Example: Plex | Media server | http://server-ip:32400 | [plex.md](APPS/example-plex.md) |
+|Pi-hole | DNS / ad blocking | http://192.168.1.194/admin | [pihole.md](APPS/example-pihole.md) |
+| Portainer | Container/Stack Management | https://192.168.1.194:9443 | [plex.md](APPS/example-plex.md) |
+| AMP | Game Server Hosting | http://192.168.1.194:8080 | [pihole.md](APPS/example-pihole.md) |
 
-> Delete the examples above and add your own apps here as you install them — one row per service, linking to its doc in `APPS/`.
 
 ## System Info
-- **OS:**
-- **Hostname:**
-- **Static IP:**
-- **Virtualization/Containers:** (Docker / Proxmox / bare metal)
-- **Last full review:** YYYY-MM-DD
+- **OS:** Debian (Trixie) 13.7
+- **Hostname:** Debian
+- **Static IP:** 192.168.1.194
+- **Containers:** Docker w/ Portainer
+- **Last full review:** 2026-09-30
 
 ## Philosophy / Notes
-- AT&T uses one device for modem and router
+- AT&T uses one device for modem and router, reverse DNS could possibly make setup more challenging
 - Still have 6 keystones and roughly 20 RJ45 connectors left
 
 Use this section for anything a future version of you needs to know before touching this server — design decisions, things you tried and abandoned, quirks of your ISP/router, etc.
