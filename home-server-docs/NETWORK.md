@@ -6,10 +6,10 @@
 | Main LAN | 192.168.1.0/24 | Trusted devices |
 
 ## Server Network Details
-- **Static IP:**
-- **Gateway:**
-- **DNS servers:**
-- **MAC address (if reserving via DHCP):**
+- **Static IP:** 192.168.1.194
+- **Gateway:** 192.168.1.254
+- **DNS servers:** 8.8.8.8 + 192.168.1.194 (Pi-hole)
+- **MAC address (if reserving via DHCP):** 20-88-10-e2-0d-a9
 
 ## Port Forwarding / Reverse Proxy
 | External Port | Internal Port | Service | Notes |
@@ -21,18 +21,11 @@
 - **SSL/TLS certificate source:** (Let's Encrypt, self-signed, Cloudflare)
 - **Cert renewal method:**
 
-## DNS
-- **Local DNS resolver:** (Pi-hole, router, none)
-- **Domain used for services:** (e.g. `*.home.lan` or a real domain)
-- **Dynamic DNS provider (if any):**
-
 ## Firewall Rules
-Document any non-default rules — what's blocked, what's allowed between segments, and why.
+N/A
 
 ## VPN
-- **VPN service running:** (WireGuard, Tailscale, OpenVPN, none)
-- **Purpose:** (remote access to home network, etc.)
-- **Config/key locations:** (reference only — never store keys in this doc)
+- **VPN service running:** 
+- **Purpose:** 
+- **Config/key locations:** 
 
-## Network Diagram
-Link to or embed a diagram (draw.io, Excalidraw, etc.) showing how everything connects.
