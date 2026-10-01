@@ -15,6 +15,7 @@ The goal of this file: if the server dies tomorrow, you should be able to follow
 - [ ] Configure SSH (key-based auth, disable password login)
 - [ ] Configure firewall (ufw/iptables/nftables rules)
 - [ ] Install Docker / container runtime (if used)
+- [ ] Install Tailscale and authenticate (see [APPS/tailscale.md](APPS/tailscale.md))
 - [ ] Mount data drives / configure fstab
 
 ## 3. Core Services Install Order
@@ -22,7 +23,8 @@ List the order you install things in, since some depend on others (e.g. reverse 
 
 1. Reverse proxy (Traefik/nginx)
 2. DNS (Pi-hole)
-3. Everything else — see [APPS/](APPS/)
+3. Tailscale (after Pi-hole, since it uses Pi-hole as tailnet DNS)
+4. Everything else — see [APPS/](APPS/)
 
 ## 4. Restore From Backup
 - Pointer to [BACKUP.md](BACKUP.md) for how to restore app data and configs once the base system is up.
@@ -31,5 +33,6 @@ List the order you install things in, since some depend on others (e.g. reverse 
 - [ ] All services reachable at expected URLs
 - [ ] SSL certs valid
 - [ ] DNS resolving correctly
+- [ ] Tailscale connected, and DNS resolves through Pi-hole from a remote device
 - [ ] Backups running on schedule
 - [ ] Monitoring/alerts active

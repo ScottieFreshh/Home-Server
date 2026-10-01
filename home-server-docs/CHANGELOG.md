@@ -2,6 +2,16 @@
 
 All notable changes to the server setup. Newest entries at the top.
 
+## 2026-10-01
+- Added: Tailscale on the server for VPN remote access (no port forwarding)
+- Changed: Pi-hole set as the global DNS nameserver for the tailnet, and configured to accept queries from the Tailscale interface
+- Notes: Subnet routing / exit node: ______. Key expiry disabled for the server: ______.
+
+## 2026-09-30
+- Added: Pi-hole (Docker) for network-wide DNS / ad blocking
+- Added: Portainer CE (Docker) for container and stack management
+- Added: AMP (installed natively) for game server hosting
+
 ## 2026-09-24
 - Changed: Reconfigured access point from range extender to access point, changed SSID to match router
     

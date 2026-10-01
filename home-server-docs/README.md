@@ -20,6 +20,7 @@ Central reference for my self-hosted infrastructure. Update this file every time
 |Pi-hole | DNS / ad blocking | http://192.168.1.194/admin | [pihole.md](APPS/example-pihole.md) |
 | Portainer | Container/Stack Management | https://192.168.1.194:9443 | [portainer.md](APPS/portainer.md) |
 | AMP | Game Server Hosting | http://192.168.1.194:8080 | [amp.md](APPS/amp.md) |
+| Tailscale | VPN / remote access | Admin console: https://login.tailscale.com/admin | [tailscale.md](APPS/tailscale.md) |
 
 
 ## System Info
@@ -27,10 +28,11 @@ Central reference for my self-hosted infrastructure. Update this file every time
 - **Hostname:** Debian
 - **Static IP:** 192.168.1.194
 - **Containers:** Docker w/ Portainer
-- **Last full review:** 2026-09-30
+- **Remote access:** Tailscale (Pi-hole used as tailnet DNS)
+- **Last full review:** 2026-10-01
 
 ## Philosophy / Notes
-- AT&T uses one device for modem and router, reverse DNS could require knowing IP without hostname
+- AT&T uses one device for modem and router, reverse DNS could possibly make setup more challenging
 - Still have 6 keystones and roughly 20 RJ45 connectors left
 
 Use this section for anything a future version of you needs to know before touching this server — design decisions, things you tried and abandoned, quirks of your ISP/router, etc.
