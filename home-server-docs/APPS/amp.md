@@ -14,7 +14,8 @@ Steps or command used to install (native, official, on Debian/Ubuntu):
 ```bash
 # Run as root or with sudo. The setup script installs dependencies, ampinstmgr,
 # creates the "amp" system user, and creates the management instance (ADS01) on port 8080.
-bash <(wget -qO- getamp.sh)
+apt install curl
+bash <(curl -fsSL getamp.sh)
 ```
 
 ## Configuration
@@ -38,7 +39,7 @@ bash <(wget -qO- getamp.sh)
 ## Data & Backup
 
 * **Data location:** `/home/amp/.ampdata/` (instances, game files, configs). Application files are in `/opt/cubecoders/amp/`.
-* **Included in backup routine?** Yes / No (fill in)
+* **Included in backup routine?** Yes weekly
 * **Backup notes:** AMP has built-in per-instance backups (scheduled or manual) stored inside each instance's folder, so they live on the same disk as the data unless you copy them elsewhere. For real protection, back up `/home/amp/.ampdata/` off the host. Game worlds can be large, so consider excluding re-downloadable game binaries.
 
 ## Dependencies
