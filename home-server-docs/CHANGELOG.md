@@ -8,9 +8,11 @@ All notable changes to the server setup. Newest entries at the top.
 - Notes: Key expiry disabled for the server: Yes
 
 ## 2026-09-30
+- Added: Fresh Debian 13 (Trixie) install on the server, with SSH enabled
 - Added: Pi-hole (Docker) for network-wide DNS / ad blocking
 - Added: Portainer CE (Docker) for container and stack management
 - Added: AMP (installed natively) for game server hosting
+- Notes: DNS wasn't resolving after install, so nameservers 8.8.8.8 and 1.1.1.1 were added to /etc/resolv.conf (see TROUBLESHOOTING.md)
 
 ## 2026-09-24
 - Changed: Reconfigured access point from range extender to access point, changed SSID to match router
