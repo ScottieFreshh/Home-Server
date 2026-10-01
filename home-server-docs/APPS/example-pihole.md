@@ -1,23 +1,56 @@
-# Pi-hole (Example)
+# Pi-hole
 
 ## Overview
 - **Purpose:** Network-wide DNS sinkhole / ad blocking
-- **Version:** 2024.01.0
-- **Docker image:** pihole/pihole:latest
-- **Official docs:** https://docs.pi-hole.net/
+- **Version:** v4.3.1
+- **Docker image:** thenetworkchuck/networkchuck_pihole:latest
+- **Official docs:**https://github.com/theNetworkChuck/NetworkChuck/blob/master/pihole.sh
 
 ## Installation
-```bash
-docker compose up -d pihole
+```
+#!/bin/bash
+
+# https://github.com/pi-hole/docker-pi-hole/blob/master/README.md
+
+docker run -d \
+    --name pihole \
+    -p 53:53/tcp -p 53:53/udp \
+    -p 80:80 \
+    -p 443:443 \
+    -p 8081:8080 \
+    -e TZ="America/Chicago" \
+    -v "$(pwd)/etc-pihole/:/etc/pihole/" \
+    -v "$(pwd)/etc-dnsmasq.d/:/etc/dnsmasq.d/" \
+    --dns=127.0.0.1 --dns=1.1.1.1 \
+    --restart=unless-stopped \
+    thenetworkchuck/networkchuck_pihole
+
+printf 'Starting up pihole container '
+for i in $(seq 1 20); do
+    if [ "$(docker inspect -f "{{.State.Health.Status}}" pihole)" == "healthy" ] ; then
+        printf ' OK'
+        echo -e "\n$(docker logs pihole 2> /dev/null | grep 'password:') for your pi-hole: https://${IP}/admin/"
+        exit 0
+    else
+        sleep 3
+        printf '.'
+    fi
+
+    if [ $i -eq 20 ] ; then
+        echo -e "\nTimed out waiting for Pi-hole start, consult check your container logs for more info (\`docker logs pihole\`)"
+        exit 1
+    fi
+done;
+© 2020 GitHub, Inc.
 ```
 
 ## Configuration
 - **Config file location:** `/opt/docker/pihole/etc-pihole`
-- **Key settings:** Upstream DNS set to 1.1.1.1 and 9.9.9.9; conditional forwarding enabled for local hostnames
-- **Environment variables:** `TZ`, `WEBPASSWORD` (set via secrets, not in compose file)
+- **Key settings:** Upstream DNS set to 8.8.8.8 
+- **Environment variables:** `TZ`, `WEBPASSWORD` 
 
 ## Access
-- **URL:** http://192.168.10.5/admin
+- **URL:** http://192.168.1.194/admin
 - **Default username:** N/A (password only)
 - **SSL/TLS:** No (internal only, not exposed to internet)
 
@@ -29,7 +62,7 @@ docker compose up -d pihole
 ## Dependencies
 - **Requires:** Nothing (standalone)
 - **Ports used:** 53 (DNS, TCP+UDP), 80 (admin UI)
-- **Port conflicts to watch for:** systemd-resolved on the host also wants port 53 — disabled it before installing
+- **Port conflicts to watch for:**
 
 ## Networking
 - **Exposed ports:** 53, 80
@@ -38,7 +71,6 @@ docker compose up -d pihole
 
 ## Troubleshooting
 - If DNS stops resolving network-wide, check container is running first (`docker ps`) before touching client devices
-- See [TROUBLESHOOTING.md](../TROUBLESHOOTING.md) for the disk-space incident from Jan 2024
 
 ## Update Procedure
 ```bash
