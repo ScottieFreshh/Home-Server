@@ -5,11 +5,13 @@ Central reference for my self-hosted infrastructure. Update this file every time
 ## Quick Links
 - [Hardware](HARDWARE.md)
 - [Network Setup](NETWORK.md)
+- [Network Diagram](network-diagram.md)
 - [Initial Setup / Rebuild Guide](SETUP.md)
 - [Backup Strategy](BACKUP.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 - [Changelog](CHANGELOG.md)
 - [Apps](APPS/)
+- [Main Pc Build](PC_BUILD.md)
 
 ## Services Running
 
