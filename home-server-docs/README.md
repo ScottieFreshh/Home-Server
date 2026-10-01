@@ -30,7 +30,7 @@ Central reference for my self-hosted infrastructure. Update this file every time
 - **Last full review:** 2026-09-30
 
 ## Philosophy / Notes
-- AT&T uses one device for modem and router, reverse DNS could possibly make setup more challenging
+- AT&T uses one device for modem and router, reverse DNS could require knowing IP without hostname
 - Still have 6 keystones and roughly 20 RJ45 connectors left
 
 Use this section for anything a future version of you needs to know before touching this server — design decisions, things you tried and abandoned, quirks of your ISP/router, etc.
