@@ -2,7 +2,7 @@
 
 ## Overview
 - **Purpose:** Self-hosted service monitoring with status checks and alert notifications sent to Discord
-- **Version:** ______ (shown in the web UI footer)
+- **Version:** 2.5.5
 - **Docker image:** `louislam/uptime-kuma:2 
 - **Official docs:** https://github.com/louislam/uptime-kuma/wiki
 
