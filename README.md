@@ -3,24 +3,24 @@
 Central reference for my self-hosted infrastructure. Update this file every time something changes.
 
 ## Quick Links
-- [Hardware](HARDWARE.md)
-- [Network Setup](NETWORK.md)
-- [Network Diagram](network-diagram.md)
-- [Initial Setup / Rebuild Guide](SETUP.md)
-- [Backup Strategy](BACKUP.md)
-- [Troubleshooting](TROUBLESHOOTING.md)
-- [Changelog](CHANGELOG.md)
-- [Apps](APPS/)
-- [Main Pc Build](PC_BUILD.md)
+- [Hardware](home-server-docs/HARDWARE.md)
+- [Network Setup](home-server-docs/NETWORK.md)
+- [Network Diagram](home-server-docs/network-diagram.md)
+- [Initial Setup / Rebuild Guide](home-server-docs/SETUP.md)
+- [Backup Strategy](home-server-docs/BACKUP.md)
+- [Troubleshooting](home-server-docs/TROUBLESHOOTING.md)
+- [Changelog](home-server-docs/CHANGELOG.md)
+- [Apps](home-server-docs/APPS/)
+- [Main Pc Build](home-server-docs/PC_BUILD.md)
 
 ## Services Running
 
 | App | Purpose | URL | Doc |
 |---|---|---|---|
-|Pi-hole | DNS / ad blocking | http://192.168.1.194/admin | [pihole.md](APPS/pihole.md) |
-| Portainer | Container/Stack Management | https://192.168.1.194:9443 | [portainer.md](APPS/portainer.md) |
-| AMP | Game Server Hosting | http://192.168.1.194:8080 | [amp.md](APPS/amp.md) |
-| Tailscale | VPN / remote access | Admin console: https://login.tailscale.com/admin | [tailscale.md](APPS/tailscale.md) |
+|Pi-hole | DNS / ad blocking | http://192.168.1.194/admin | [pihole.md](home-server-docs/APPS/example-pihole.md) |
+| Portainer | Container/Stack Management | https://192.168.1.194:9443 | [portainer.md](home-server-docs/APPS/portainer.md) |
+| AMP | Game Server Hosting | http://192.168.1.194:8080 | [amp.md](home-server-docs/APPS/amp.md) |
+| Tailscale | VPN / remote access | Admin console: https://login.tailscale.com/admin | [tailscale.md](home-server-docs/APPS/tailscale.md) |
 
 
 ## System Info
