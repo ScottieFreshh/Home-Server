@@ -2,7 +2,7 @@
 
 ## Overview
 - **Purpose:** Mesh VPN for remote access to the server (and Pi-hole DNS) from outside the home network, with no port forwarding
-- **Version:** ______ (run `tailscale version`)
+- **Version:**  1.102.4 (run `tailscale version`)
 - **Docker image:** None. Installed natively on the host.
 - **Official docs:** https://tailscale.com/kb
 
