@@ -17,7 +17,7 @@ Central reference for my self-hosted infrastructure. Update this file every time
 
 | App | Purpose | URL | Doc |
 |---|---|---|---|
-|Pi-hole | DNS / ad blocking | http://192.168.1.194/admin | [pihole.md](APPS/example-pihole.md) |
+|Pi-hole | DNS / ad blocking | http://192.168.1.194/admin | [pihole.md](APPS/pihole.md) |
 | Portainer | Container/Stack Management | https://192.168.1.194:9443 | [portainer.md](APPS/portainer.md) |
 | AMP | Game Server Hosting | http://192.168.1.194:8080 | [amp.md](APPS/amp.md) |
 | Tailscale | VPN / remote access | Admin console: https://login.tailscale.com/admin | [tailscale.md](APPS/tailscale.md) |
