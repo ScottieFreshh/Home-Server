@@ -11,7 +11,7 @@ Central reference for my self-hosted infrastructure. Update this file every time
 - [Troubleshooting](home-server-docs/TROUBLESHOOTING.md)
 - [Changelog](home-server-docs/CHANGELOG.md)
 - [Apps](home-server-docs/APPS/)
-- [Main Pc Build](home-server-docs/PC_BUILD.md)
+- [Main Pc Build](PC_BUILD.md)
 
 ## Services Running
 
@@ -33,7 +33,7 @@ Central reference for my self-hosted infrastructure. Update this file every time
 - **Last full review:** 2026-10-01
 
 ## Philosophy / Notes
-- AT&T uses one device for modem/router and uses reverse DNS, could possibly make setup more challenging
+- AT&T uses one device for modem and router, reverse DNS could possibly make setup more challenging
 - Still have 6 keystones and roughly 20 RJ45 connectors left
 
 Use this section for anything a future version of you needs to know before touching this server — design decisions, things you tried and abandoned, quirks of your ISP/router, etc.
