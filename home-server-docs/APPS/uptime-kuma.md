@@ -3,7 +3,7 @@
 ## Overview
 - **Purpose:** Self-hosted service monitoring with status checks and alert notifications sent to Discord
 - **Version:** ______ (shown in the web UI footer)
-- **Docker image:** `louislam/uptime-kuma:______` (fill in the tag you used, e.g. `1` or `2`)
+- **Docker image:** `louislam/uptime-kuma:2 
 - **Official docs:** https://github.com/louislam/uptime-kuma/wiki
 
 ## Installation
@@ -15,16 +15,15 @@ docker run -d \
   --restart=always \
   -p 3001:3001 \
   -v uptime-kuma:/app/data \
-  louislam/uptime-kuma:______
+  louislam/uptime-kuma:2
 ```
-(Adjust if you deployed it through a Portainer stack or compose file.)
 
 ## Configuration
 - **Config file location:** None. Settings and monitors are stored in the app database inside the data volume and managed in the web UI.
 - **Key settings:**
   - Notification: Discord webhook, set under Settings → Notifications
-  - Monitors: ______ (e.g. Pi-hole, Portainer, AMP panel, game server ports, internet connectivity)
-  - Check interval / retries: ______
+  - Monitors:Pi-hole, Portainer, AMP panel, game server ports, internet connectivity
+  - Check interval / retries: 120 seconds
 - **Environment variables:** None
 
 ## Access
