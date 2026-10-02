@@ -54,7 +54,7 @@ bash <(curl -fsSL getamp.sh)
 ## Networking
 
 * **Exposed ports:** 8080 (or your chosen ADS port) for the panel, plus whichever game ports you want players to reach. Forward only the game ports through your router, and keep the panel LAN or VPN only if possible.
-* **Behind reverse proxy?** Yes / No (fill in)
+* **Behind reverse proxy?** No 
 * **Subdomain/URL routing:** e.g. `amp.yourdomain.com` → `http://localhost:8080`. Requirements:
   * Pass the `X-AMP-Scheme` header
   * Enable WebSocket support (needed for the live console)
