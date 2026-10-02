@@ -6,7 +6,7 @@ All notable changes to the server setup. Newest entries at the top.
 - Added: Tailscale on the server for VPN remote access (no port forwarding)
 - Changed: Pi-hole set as the global DNS nameserver for the tailnet, and configured to accept queries from the Tailscale interface
 - Added: Uptime Kuma (Docker) for service monitoring, with alerts and status updates sent to Discord
-- Notes: Subnet routing / exit node: ______. Key expiry disabled for the server: ______.
+- Notes: Key expiry disabled for the server
 
 ## 2026-09-30
 - Added: Fresh Debian 13 (Trixie) install on the server, with SSH enabled
