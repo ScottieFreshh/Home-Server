@@ -30,6 +30,5 @@ N/A
 - **Purpose:** Remote access to the server and home services without port forwarding, plus Pi-hole DNS filtering for devices away from home
 - **Config/key locations:** State in `/var/lib/tailscale`. Auth and settings are managed in the Tailscale admin console. No keys are stored in this repo.
 - **DNS over VPN:** Pi-hole is set as the global nameserver in the Tailscale admin console (DNS tab) with "Override local DNS" on. Pi-hole accepts queries from the Tailscale interface.
-- **Subnet router / exit node:** ______ (fill in)
 - **Details:** [tailscale.md](APPS/tailscale.md)
 
