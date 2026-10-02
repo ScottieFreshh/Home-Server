@@ -22,6 +22,7 @@
 2. bash <(curl -fsSL getamp.sh) (installs AMP)
 3. Create Compose File and give U + X permissions
 4. Paste from Notepad and sudo ./(file name)
+5. Tailscale (relies on DNS from PiHole)
 
 ## Last Tested Restore
 - **Date:**
