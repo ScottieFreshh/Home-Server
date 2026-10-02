@@ -29,7 +29,7 @@ docker run -d \
 
 ## Access
 - **URL:** `http://192.168.1.194:3001`
-- **Default username:** You create the admin account on first visit. Never store passwords here; use a password manager.
+- **Default username:** You create the admin account on first visit.
 - **SSL/TLS:** No (internal only, not exposed to the internet). Reach it remotely over Tailscale.
 
 ## Data & Backup
@@ -57,12 +57,12 @@ Common issues for this app. See [TROUBLESHOOTING.md](https://github.com/ScottieF
 ## Update Procedure
 ```bash
 docker stop uptime-kuma && docker rm uptime-kuma
-docker pull louislam/uptime-kuma:______
+docker pull louislam/uptime-kuma:2
 # re-run the same docker run command from Installation
 ```
 The `uptime-kuma` volume keeps monitors and settings. Back up the volume first, and check the release notes before major version jumps (a major version change can migrate the database).
 
 ## Notes
-* The Discord webhook URL is a secret. Anyone with it can post to your channel, so keep it out of this repo and your compose files in version control.
+* The Discord webhook URL is a secret. 
 * Uptime Kuma runs on the same server it monitors, so it can't alert you if the whole server or its internet connection goes down. Consider a free external monitor or a second check from another device as a backstop.
 * Alerts are only useful if Discord notifications are enabled on your phone for that channel.
