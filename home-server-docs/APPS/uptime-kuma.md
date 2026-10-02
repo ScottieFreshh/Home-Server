@@ -15,6 +15,7 @@ docker run -d \
   --restart=always \
   -p 3001:3001 \
   -v uptime-kuma:/app/data \
+  -v -v /var/run/docker.sock:/var/run/docker.sock
   louislam/uptime-kuma:2
 ```
 
