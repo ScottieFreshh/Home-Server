@@ -32,8 +32,8 @@ docker run -d \
 
 ## Access
 
-* **URL:** `https://<server-ip>:9443`
-* **Default username:** `admin` (you create it on first login, so there is no preset password). Never store passwords here; use a password manager.
+* **URL:** `https://192.168.1.194:9443`
+* **Default username:** `admin` (you create it on first login, so there is no preset password).
 * **SSL/TLS:** Yes, a self-signed certificate by default. Expect a browser warning until you replace it under Settings → SSL certificate or put it behind a reverse proxy.
 
 ## Data & Backup
