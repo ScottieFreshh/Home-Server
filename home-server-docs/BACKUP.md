@@ -7,7 +7,7 @@
 | AMP Server Instances |  /home/amp/.ampdata/instances | Yes | Weekly |
 
 ## Where Backups Go
-- **Primary backup destination:** 4TB HDD on main PC
+- **Primary backup destination:** Backup folder on 4TB HDD on main PC
 - **Secondary/offsite backup:** WD Mypassport Ultra 
 - **Encryption:** N/A
 
