@@ -19,8 +19,8 @@ sudo tailscale up
 - **Config file location:** None. State is stored in `/var/lib/tailscale`. Most settings live in the admin console.
 - **Key settings:**
   - DNS: Pi-hole's Tailscale IP is set as a custom global nameserver in the admin console (DNS tab), with "Override local DNS" enabled so all tailnet devices use it
-  - Key expiry disabled for this machine: yes / no (fill in)
-  - Subnet router for 192.168.1.0/24: yes / no (fill in; routes must be approved in the admin console)
+  - Key expiry disabled for this machine: yes 
+  - Subnet router for 192.168.1.0/24: no 
   - Exit node: yes / no (fill in)
 - **Environment variables:** None
 
