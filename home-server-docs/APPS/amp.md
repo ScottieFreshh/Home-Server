@@ -3,7 +3,7 @@
 ## Overview
 
 * **Purpose:** Web-based control panel for creating, running, and managing game servers (Minecraft, Valheim, Factorio, ARK, and many more) from one UI. A licence from CubeCoders is required.
-* **Version:** Check the Web UI footer or run `ampinstmgr` on the host. AMP updates itself, so record the version you installed here: ______
+* **Version:** AMP updates itself, so record the version you installed here: 2.8.0.8
 * **Docker image:** None. AMP is installed natively on the host.
 * **Official docs:** https://github.com/CubeCoders/AMP/wiki
 
