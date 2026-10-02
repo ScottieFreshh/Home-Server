@@ -9,7 +9,7 @@
 - **Static IP:** 192.168.1.194
 - **Gateway:** 192.168.1.254
 - **DNS servers:** 8.8.8.8 + 192.168.1.194 (Pi-hole)
-- **MAC address (if reserving via DHCP):** 20-88-10-e2-0d-a9
+- **MAC address (if reserving via DHCP):** XX-XX-XX-XX-XX
 
 ## Port Forwarding / Reverse Proxy
 | External Port | Internal Port | Service | Notes |
