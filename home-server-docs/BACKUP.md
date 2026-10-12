@@ -21,7 +21,7 @@
 1. Reinstall Debian
 2. Install curl (sudo apt install curl)
 3. bash <(curl -fsSL getamp.sh) (installs AMP)
-4. Create Compose File and give U + X permissions
+4. Create Compose File for each container and give U + X permissions
 5. Paste from Notepad and sudo ./(file name)
 6. Tailscale (relies on DNS from PiHole)
 
