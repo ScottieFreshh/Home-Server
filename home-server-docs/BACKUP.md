@@ -21,9 +21,10 @@
 1. Reinstall Debian
 2. Install curl (sudo apt install curl)
 3. bash <(curl -fsSL getamp.sh) (installs AMP)
-4. Create Compose File for each container and give U + X permissions
-5. Paste from Notepad and sudo ./(file name)
-6. Tailscale (relies on DNS from PiHole)
+4. Install Docker
+5. Create Compose File
+6. Retrieve yml from Git, then docker compose up -d
+7. Tailscale (relies on DNS from PiHole)
 
 ## Last Tested Restore
 - **Date:**
